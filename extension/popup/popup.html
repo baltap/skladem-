@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heureka Stock Verifier</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="brand">
+        <span class="logo-icon">🔍</span>
+        <h1>Stock Verifier</h1>
+      </div>
+      <span class="status-indicator online" id="api-status">Server: Online</span>
+    </header>
+
+    <main>
+      <!-- Action panel for active e-shop checks -->
+      <section class="action-card">
+        <h3>Verify Active Merchant Page</h3>
+        <p class="subtitle" id="current-tab-name">Detecting current tab...</p>
+        <button id="verify-btn" class="btn-primary" disabled>Check Current Tab</button>
+        <div id="verify-result" class="result-box hidden"></div>
+      </section>
+
+      <!-- Merchant reliability dashboard -->
+      <section class="dashboard-card">
+        <h3>Merchant Stock Reliability</h3>
+        <div class="merchant-list" id="merchant-list">
+          <div class="loading-state">
+            <span class="spinner">⏳</span> Loading merchant rankings...
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Prototyping Sprint — Heureka Real-Time Stock Verifier</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

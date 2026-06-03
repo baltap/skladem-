@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Heureka Real-Time Stock Verifier",
+  "version": "1.0.0",
+  "description": "Verifies stock status discrepancies of listed e-shops in real-time.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.heureka.cz/*",
+    "https://*.heureka.sk/*",
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.heureka.cz/*",
+        "https://*.heureka.sk/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
