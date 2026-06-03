@@ -22,7 +22,7 @@ An intelligent, real-time verification pipeline designed to detect stock status 
 
 ## ℹ️ About the Project
 
-The **Heureka Real-Time Stock Verifier** is a prototype proof-of-concept designed during a 4-day (96-hour) development sprint. It demonstrates how autonomous AI scrapers can verify e-commerce merchant inventory claims dynamically and without reliance on brittle, site-specific CSS selectors. By comparing scraping results against Heureka XML feeds, it holds merchants accountable and protects buyers from phantom stock.
+The **Heureka Real-Time Stock Verifier** is a prototype proof-of-concept designed during a 4-hour development sprint. It demonstrates how autonomous AI scrapers can verify e-commerce merchant inventory claims dynamically and without reliance on brittle, site-specific CSS selectors. By comparing scraping results against Heureka XML feeds, it holds merchants accountable and protects buyers from phantom stock.
 
 ---
 
