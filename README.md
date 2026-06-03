@@ -5,17 +5,24 @@ An intelligent, real-time verification pipeline designed to detect stock status 
 ---
 
 ## 📋 Table of Contents
-1. [Overview](#-overview)
-2. [Problem Statement](#-problem-statement)
-3. [Architecture](#-architecture)
-4. [Tech Stack](#%EF%B8%8F-tech-stack)
-5. [Directory Structure](#-directory-structure)
-6. [Getting Started](#-getting-started)
-7. [System Rules & Mechanics](#-system-rules--mechanics)
+1. [About the Project](#-about-the-project)
+2. [Overview](#-overview)
+3. [Problem Statement](#-problem-statement)
+4. [Architecture](#-architecture)
+5. [Tech Stack](#%EF%B8%8F-tech-stack)
+6. [Directory Structure](#-directory-structure)
+7. [Getting Started](#-getting-started)
+8. [System Rules & Mechanics](#-system-rules--mechanics)
    - [Zero-Selector Scraping](#zero-selector-scraping)
    - [Gemini LLM Analysis](#gemini-llm-analysis)
    - [Scoring Engine](#scoring-engine)
-8. [AI Collaboration](#-ai-collaboration)
+9. [AI Collaboration](#-ai-collaboration)
+
+---
+
+## ℹ️ About the Project
+
+The **Heureka Real-Time Stock Verifier** is a prototype proof-of-concept designed during a 4-day (96-hour) development sprint. It demonstrates how autonomous AI scrapers can verify e-commerce merchant inventory claims dynamically and without reliance on brittle, site-specific CSS selectors. By comparing scraping results against Heureka XML feeds, it holds merchants accountable and protects buyers from phantom stock.
 
 ---
 
